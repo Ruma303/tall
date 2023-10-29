@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'TALL stack')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 
 <body class="flex flex-col justify-center items-center space-y-4">
@@ -13,6 +14,7 @@
     <main class="min-h-[100vh] container mx-auto flex flex-col items-center space-y-4">
         @yield('main')
     </main>
+    @livewireStyles
 </body>
 
 </html>
