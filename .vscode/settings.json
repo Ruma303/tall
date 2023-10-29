@@ -1,0 +1,51 @@
+{
+    //% Restore Terminals
+    "restoreTerminals.runOnStartup": true,
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Artisan",
+                    "commands": [
+                        "php artisan serve",
+                    ]
+                },
+                {
+                    "shouldRunCommands": true,
+                    "name": "Vite",
+                    "commands": [
+                        "npm run dev",
+                    ]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Routes",
+                    "commands": [
+                        "php artisan route:list --path=api",
+                    ]
+                },
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Database",
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Terminal 1",
+                }
+            ]
+        }
+    ]
+}
